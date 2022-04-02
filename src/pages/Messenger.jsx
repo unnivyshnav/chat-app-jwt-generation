@@ -11,7 +11,7 @@ export default function Messenger() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/auth", {
+      const res = await axios.post("https://mernchatappp.herokuapp.com/auth", {
         name: nameRef.current.value,
         mobile: mobileRef.current.value,
       });
